@@ -1,0 +1,477 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #FADCD9;
+}
+
+.phone-lang {
+    display: none;
+}
+
+.phone-lang > img {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+    margin: 5px;
+}
+
+main {
+    animation: transitionIn 1.7s
+}
+
+.hamburger {
+    display: none;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer > a {
+    color: #FF8976;
+    font-weight: bold;
+}
+
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5% 5%;
+}
+
+.justine-pic {
+    border-radius: 50%;
+    width: 351px;
+    height: 351px;
+}
+
+.first {
+    padding: 10px;
+}
+
+.first > p{
+    font-size: 35px;
+}
+
+.second {
+    padding: 10px;
+    
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 50px;
+}
+
+.nav-list > li {
+    margin: 0 20px;
+}
+
+.nav-list > li > a {
+    text-decoration: none;
+    color: black;
+    font-weight:500;
+}
+
+.nav-list > li > a:hover {
+    opacity: 45%;
+}
+
+.tiktok, .insta, .youtube {
+    display: flex;
+    align-items: center;
+}
+
+.tiktok > a, .insta > a, .youtube > a {
+    text-decoration: none;
+    color: black;
+    margin: 0 3px;
+}
+
+.socials {
+    display: flex;
+    margin-top: 20px;
+}
+
+.tiktok {
+    margin: 0 10px 0 0;
+}
+.insta, .youtube {
+    margin: 0 10px;
+}
+
+.tiktok > img {
+    width: 38px;
+    height: 38px;
+}
+
+.insta > img {
+    width: 38px;
+    height: 38px;
+}
+
+.youtube > img {
+    width: 38px;
+    height: 38px;
+}
+
+
+/* allergy.html */
+.title2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 40px 0;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 40px 0;
+}
+
+.title > h1, .title > h2 {
+    color: #FF8976;
+    font-size: 40px;
+}
+
+.steps1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.steps1 > ul {
+    list-style: none;
+}
+
+.steps1 > ul > li {
+    font-size: 25px;
+    margin: 10px;
+}
+
+.note1 {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 10px 0;
+}
+
+.note1 > p {
+    font-size: 20px;;
+    
+}
+
+.reminder1 {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.reminder1 > p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* soap.html */
+
+.title2 > h1, .title2 > h2 {
+    color: #FF8976;
+    font-size: 40px;
+}
+
+.steps2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.steps2 > ul > li {
+    font-size: 25px;
+    margin: 10px;
+}
+
+.note2 {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 10px 0;
+}
+
+.note2 > p {
+    font-size: 20px;;
+}
+
+.reminder2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.reminder2 > p {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+
+/* responsiveness */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+     /* navbar responsiveness */
+     .nav-list {
+        position: fixed;
+        left: -112%;
+        top: 2rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 70%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-list.active {
+        left: 0;
+    }
+
+    .nav-list > li {
+        margin: 1rem 0;
+        background-color: #fff;
+    }
+
+    .nav-list > li > a {
+        color: #FF8976;
+        background-color: #fff;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    /* home */
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 15px;
+    }
+    
+    .footer > a {
+        color: #FF8976;
+        font-weight: bold;
+
+    }
+
+    .phone-lang {
+        display: block;
+    }
+
+    .phone-lang > img {
+        display: block;
+        height: 151px;
+        width: 151px;
+    }
+    
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15% 5%;
+    }
+    
+    
+    
+    .first {
+        padding: 10px;
+    }
+    
+    .first > p{
+        font-size: 22px;
+    }
+    
+    .second {
+        display: none;
+        padding: 0;
+    }
+    
+    .tiktok, .insta, .youtube {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tiktok > a, .insta > a, .youtube > a {
+        font-size: 13px;
+    }
+    
+    .socials {
+        display: flex;
+        margin-top: 40px;
+    }
+    
+    .tiktok {
+        margin: 0 5px 0 0;
+    }
+    .insta, .youtube {
+        margin: 0 5px;
+    }
+    
+    .tiktok > img {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .insta > img {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .youtube > img {
+        width: 28px;
+        height: 28px;
+    }
+    
+    /* allergy */
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 40px 0;
+    }
+    
+    .title > h1, .title > h2 {
+        color: #FF8976;
+        font-size: 35px;
+    }
+    
+    .steps1 > ul {
+        list-style: none;
+    }
+    
+    .steps1 > ul > li {
+        font-size: 20px;
+        margin: 5px;
+        padding: 10px;
+    }
+    
+    .note1 {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0 10px 0;
+        padding: 10px;
+    }
+    
+    .note1 > p {
+        font-size: 18px;;
+        
+    }
+    
+    .reminder1 {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0;
+        padding: 10px;
+    }
+    
+    .reminder1 > p {
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    /* soap and cream */
+    .title2 > h1 {
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    .title2 > h1, .title2 > h2 {
+        color: #FF8976;
+        font-size: 30px;
+    }
+
+    .steps2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .steps2 > ul > li {
+        font-size: 15px;
+        margin: 10px 15px;
+    }
+    
+    .note2 {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        margin: 30px 0 10px 0;
+    }
+    
+    .note2 > p {
+        font-size: 15px;;
+        
+    }
+    
+    .reminder2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0;
+        padding: 10px;
+    }
+    
+    .reminder2 > p {
+        font-size: 15px;
+        font-weight: bold;
+        margin: 5px 0;
+    }
+
+}
+
+
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(0deg)
+    }
+    
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
